@@ -6,6 +6,7 @@ public class Player {
     private final int defenseStrength;
     private final int attackPower;
     private int health;
+    private final PlayerType type;
 
     private Player(Builder builder) {
         this.name = builder.name;
@@ -13,6 +14,7 @@ public class Player {
         this.defenseStrength = builder.strength;
         this.attackPower = builder.attack;
         this.health = builder.health;
+        this.type = builder.type;
     }
 
     public String getName() {
@@ -35,12 +37,17 @@ public class Player {
         return health;
     }
 
+    public PlayerType getType() {
+        return type;
+    }
+
     public static class Builder {
         private String name;
         private int id;
         private int strength;
         private int attack;
         private int health;
+        private PlayerType type;
 
         public Builder setName(String name) {
             this.name = name;
@@ -67,6 +74,11 @@ public class Player {
             return this;
         }
 
+        public Builder setType(PlayerType type) {
+            this.type = type;
+            return this;
+        }
+
         public Player build() {
             return new Player(this);
         }
@@ -78,7 +90,8 @@ public class Player {
                 .setId(id)
                 .setHealth(this.health)
                 .setAttackPower(this.attackPower)
-                .setDefenseStrength(this.defenseStrength).build();
+                .setDefenseStrength(this.defenseStrength)
+                .setType(this.type).build();
     }
 
     public void takeDamage(int damage) {
