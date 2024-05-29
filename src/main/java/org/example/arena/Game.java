@@ -40,7 +40,7 @@ public class Game {
             TurnResult result = gameService.playTurn(firstPlayer, secondPlayer);
             displayTurnResult(result);
 
-            if (gameService.isGameOver(player1, player2)) {
+            if (!gameService.isGameOver(player1, player2)) {
                 result = gameService.playTurn(secondPlayer, firstPlayer);
                 displayTurnResult(result);
             }

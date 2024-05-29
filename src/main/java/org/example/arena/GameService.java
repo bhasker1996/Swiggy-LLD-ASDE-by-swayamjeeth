@@ -1,5 +1,6 @@
 package org.example.arena;
 
+import org.example.arena.exceptions.GameNotOverException;
 import org.example.arena.models.Dice;
 import org.example.arena.models.Player;
 import org.example.arena.models.TurnResult;
@@ -30,8 +31,10 @@ public class GameService {
     public Player getWinner(Player player1, Player player2) {
         if(player1.isDead()) {
             return player2;
-        } else {
+        } else if(player2.isDead()) {
             return player1;
+        } else {
+            throw new GameNotOverException("Cannot determine winner for game while it is ongoing.");
         }
     }
 

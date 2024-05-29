@@ -1,5 +1,6 @@
 package org.example.arena.utils;
 
+import org.example.arena.exceptions.InvalidClassSelection;
 import org.example.arena.models.Player;
 import org.example.arena.models.PlayerType;
 import org.junit.jupiter.api.BeforeEach;
@@ -27,5 +28,9 @@ public class PlayerFactoryTest {
         assertInstanceOf(Integer.class, player.getHealth());
         assertInstanceOf(Integer.class, player.getAttackPower());
         assertInstanceOf(Integer.class, player.getDefenseStrength());
+
+        Exception exception = assertThrows(InvalidClassSelection.class,
+                () -> factory.createPlayer("PlayerB", PlayerType.values().length + 1, 1));
+        assertEquals("Invalid class selection", exception.getMessage());
     }
 }
