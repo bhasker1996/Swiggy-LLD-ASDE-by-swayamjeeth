@@ -2,6 +2,8 @@
 
 This repository comprises the Low Level Design implementation for a turn-based 2 player game called Magic Arena. The source code is crafted in Java, with unit tests utilizing Junit5, and Maven as the build automation tool.
 
+Note: This implementation did not clear the assessment.
+
 ## Project Overview
 
 The aim is to design a Magical Arena where players engage in turn-based combat. Each player possesses 3 attributes which are: "health", "strength", and "attack"; all represented by positive integers. A player is eliminated from the game when their health reaches zero.
