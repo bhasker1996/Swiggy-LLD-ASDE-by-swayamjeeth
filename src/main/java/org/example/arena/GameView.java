@@ -1,8 +1,8 @@
 package org.example.arena;
 
-import org.example.arena.models.PlayerType;
+import org.example.arena.entity.PlayerType;
 import org.example.arena.utils.PlayerPrototypeRegistry;
-import org.example.arena.models.Player;
+import org.example.arena.entity.Player;
 
 import java.util.Scanner;
 
@@ -38,9 +38,9 @@ public class GameView {
         System.out.println("1. Each player chooses a class out of the available classes. Each class has a different set of attributes for attack, defense and health.");
         System.out.println("2. Players take turns attacking and defending. The player with lower health starts the game.");
         System.out.println("3. Each round involves the attacking and defending player rolling a dice to get a multiplier");
-        System.out.println("3. The attack stat of the attacking player and defense stat of the defending player are increased by their respective multipliers.\n" +
+        System.out.println("4. The attack stat of the attacking player and defense stat of the defending player are increased by their respective multipliers.\n" +
                 "\tSurplus damage, if any, is reduced from the defending player's health");
-        System.out.println("4. First player to reduce the opponent's health to 0 wins.");
+        System.out.println("5. First player to reduce the opponent's health to 0 wins.");
         System.out.println();
     }
 

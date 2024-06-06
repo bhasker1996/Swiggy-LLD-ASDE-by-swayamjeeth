@@ -1,8 +1,8 @@
 package org.example.arena.utils;
 
 import org.example.arena.exceptions.InvalidClassSelection;
-import org.example.arena.models.Player;
-import org.example.arena.models.PlayerType;
+import org.example.arena.entity.Player;
+import org.example.arena.entity.PlayerType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

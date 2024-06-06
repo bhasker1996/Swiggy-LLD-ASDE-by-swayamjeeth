@@ -1,4 +1,4 @@
-package org.example.arena.models;
+package org.example.arena.entity;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

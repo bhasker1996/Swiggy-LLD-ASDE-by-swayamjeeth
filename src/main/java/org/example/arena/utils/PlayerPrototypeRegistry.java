@@ -1,7 +1,7 @@
 package org.example.arena.utils;
 
-import org.example.arena.models.Player;
-import org.example.arena.models.PlayerType;
+import org.example.arena.entity.Player;
+import org.example.arena.entity.PlayerType;
 
 import java.util.*;
 

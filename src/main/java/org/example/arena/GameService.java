@@ -1,9 +1,9 @@
 package org.example.arena;
 
 import org.example.arena.exceptions.GameNotOverException;
-import org.example.arena.models.Dice;
-import org.example.arena.models.Player;
-import org.example.arena.models.TurnResult;
+import org.example.arena.entity.Dice;
+import org.example.arena.entity.Player;
+import org.example.arena.entity.TurnResult;
 
 public class GameService {
     private final Dice dice;

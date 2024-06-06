@@ -1,4 +1,4 @@
-package org.example.arena.models;
+package org.example.arena.entity;
 
 public enum PlayerType {
     Warrior,

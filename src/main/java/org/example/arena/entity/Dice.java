@@ -1,4 +1,4 @@
-package org.example.arena.models;
+package org.example.arena.entity;
 
 public class Dice {
     private final int sides;

@@ -1,8 +1,8 @@
 package org.example.arena;
 
 import org.example.arena.exceptions.GameNotOverException;
-import org.example.arena.models.Player;
-import org.example.arena.models.TurnResult;
+import org.example.arena.entity.Player;
+import org.example.arena.entity.TurnResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
